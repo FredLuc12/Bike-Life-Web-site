@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+:root {
+    --blue: #2980b9;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s cubic-bezier(.37, 1.14, .26, 1.24);
+}
+
+*::selection {
+    background: #ff3300;
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.btn {
+    height: 4rem;
+    width: 14rem;
+    background: var(--blue);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+    opacity: .8;
+}
+
+.heading {
+    padding-top: 7rem;
+    width: 95%;
+    border-bottom: 2rem solid rgba(0, 0, 0, .3);
+    margin: 0 auto;
+}
+
+.heading span {
+    font-size: 2rem;
+    padding: 1rem 6rem;
+    color: #fff;
+    background: var(--blue);
+    border-top-right-radius: 3rem;
+    display: inline-block;
+}
+
+header .header-1,
+header .header-2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .header-1 .logo {
+    font-size: 2rem;
+    color: rgba(204, 171, 109, 0.911);
+}
+
+header .header-1 .logo i {
+    color: var(--blue);
+}
+
+header .header-1 .form-container form {
+    display: flex;
+}
+
+header .header-1 .form-container form #search {
+    height: 4rem;
+    width: 50rem;
+    outline: none;
+    border: .2rem solid #666;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+header .header-1 .form-container form #search:focus {
+    border-color: var(--blue);
+}
+
+header .header-1 .form-container form label {
+    height: 4rem;
+    width: 5rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background: var(--blue);
+    color: #fff;
+}
+
+id {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: -3rem auto;
+    width: 50%;
+}
